@@ -1,21 +1,29 @@
 # Cenário 3
 ## Análises do Cenário
-- Quando estoque de um produto chega a zero o status é alterado automaticamente para "Pausado" ao invés de "Pausado (Sem Estoque)".
-- O problema (status apresentar valor "Pausado") mantém a exibição de seu anúncio, permitindo que compras sejam realizadas.
-- O cliente possui 38 itens com status "Pausado".
+- Quando estoque de um produto chega a zero o status é alterado automaticamente para `Pausado` ao invés de `Pausado (Sem Estoque)`.
+- O problema (status apresentar valor `Pausado`) mantém a exibição de seu anúncio, permitindo que compras sejam realizadas.
+- O cliente possui 38 itens com status `Pausado`.
 - O cliente não fez alteração do status.
-- Atualizar manualmente o estoque implica em mudança para o status "Pausado (Sem Estoque)".
+- Atualizar manualmente o estoque implica em mudança para o status `Pausado (Sem Estoque)`.
 - Na imagem do log, indica que os produtos estão com estoque igual a zero.
 
 ## Evidência Visual do Problema
-- O anúncio **MLB3097510082** consta como "Pausado" no painel Magazord, com estoque = 0.
+- O anúncio **MLB3097510082** consta como `Pausado` no painel Magazord, com estoque = 0.
+![image](https://github.com/user-attachments/assets/794d8f63-53cf-4e6b-9ceb-7453142d918c)
+
 
 ## Informações da Documentação do Mercado Livre (ML)
 Após leitura da documentação na parte de [Sincronização e modificação de publicações](https://developers.mercadolivre.com.br/pt_br/produto-sincronizacao-de-publicacoes) podemos entender que:
 - Uma mercadoria só pode ser pausada manualmente (por decisão do usuário) ou de forma automática (quando o estoque chegar a zero).
 - Além disso, há 2 tipos de status para pausa:
-	- O status apresentará "Pausado (Sem Estoque)" de forma automática sempre que o estoque chegar a zero. No entanto, é possível evitar isso repondo o estoque (atribuindo available_quantity maior que zero).
-	- Quando "Pausado", impede que o produto seja visualizado por outros usuário do ML. O produto não é encerrado e permite ser reativado.
+	- O status apresentará `Pausado (Sem Estoque)`de forma automática sempre que o estoque chegar a zero. No entanto, é possível evitar isso repondo o estoque (atribuindo available_quantity maior que zero).
+	- Quando `Pausado`, impede que o produto seja visualizado por outros usuário do ML. O produto não é encerrado e permite ser reativado.
+
+![image](https://github.com/user-attachments/assets/92ab7ea6-5f97-4668-8806-352410784662)
+
+![image](https://github.com/user-attachments/assets/2ced62a0-f2cf-4c0b-891d-97606e9eceed)
+
+
 
 ## Hipóteses
 
