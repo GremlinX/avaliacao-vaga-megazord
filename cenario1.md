@@ -1,7 +1,7 @@
 # 1º Cenário
 
 ## Análises, Observações e Pontos Relevantes
-- O time de desenvolvedores concluiu o projeto de integração de marketplaces de terceiros em um e-commerce. ([Mercado Livre](https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br), [Amazon](https://developer.amazonservices.com/pt-br)
+- O time de desenvolvedores concluiu o projeto de integração de marketplaces de terceiros em um e-commerce. ([Mercado Livre](https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br), [Amazon](https://developer.amazonservices.com/pt-br))
 - O projeto envolve integração de estoque, anúncios, faturamento, pedidos e preço.
 - Diante deste contexto, deve ser realizados testes no projeto concluído, com foco na funcionalidade.
 
@@ -23,7 +23,7 @@
 - Matriz de rastreabilidade dos requisitos para relacionar requisitos com os casos de testes.
 - Criar casos de testes com base em histórias de usuários envolvendo critérios de aceitação.
 
-### 1.4. Ferramentas utilizadas
+### 1.4 Ferramentas utilizadas
 - Jira, para gerenciamento dos requisitos e histórias de usuários.
 - Lucidchart, para mapeamento de fluxos
 - Postman/SwaggerUI, para verificação de respostas dos endpoints.
