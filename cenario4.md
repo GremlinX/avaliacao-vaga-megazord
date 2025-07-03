@@ -5,7 +5,10 @@
 - O formulário apresenta: Nome completo, E-mail, Número de telefone, Data de nascimento, Endereço (com campos para rua, cidade, estado e CEP).
 - Foram realizados alterações nos campos do formulário e deve ser realizados testes que mantenham o funcionamento correto do sistema.
 
+## Casos de Testes (CT)
+
 1. Nome Completo
+
 | ID   | Cenário de Teste  | Entrada           | Resultado Esperado      |
 | ---- | ----------------- | ----------------- | ----------------------- |
 | CT01 | Nome válido       | "Fulano da Silva" | OK:   Cadastro aceito   |
@@ -15,6 +18,7 @@
 | CT05 | Campo vazio       | ""                | Erro: Campo obrigatório |
 
 2. E-mail
+
 | ID   | Cenário de Teste            | Entrada                                     | Resultado Esperado      |
 | ---- | --------------------------- | ------------------------------------------- | ----------------------- |
 | CT06 | E-mail válido               | "teste@email.com"                           | Cadastro aceito         |
@@ -23,6 +27,7 @@
 | CT09 | Campo vazio                 | ""                                          | Erro: Campo obrigatório |
 
 3. Número de telefone
+
 | ID   | Cenário de Teste                | Entrada           | Resultado Esperado      |
 | ---- | ------------------------------- | ----------------- | ----------------------- |
 | CT10 | Telefone válido (com DDD)       | "(47) 91234-5678" | Cadastro aceito         |
@@ -31,6 +36,7 @@
 | CT14 | Campo vazio                     | ""                | Erro: Campo obrigatório |
 
 4. Data de nascimento
+
 | ID   | Cenário de Teste | Entrada      | Resultado Esperado      |
 | ---- | ---------------- | ------------ | ----------------------- |
 | CT15 | Data válida      | "01/01/2000" | Cadastro aceito         |
@@ -38,17 +44,23 @@
 | CT17 | Formato inválido | "2000-01-01" | Erro: Formato inválido  |
 | CT18 | Campo vazio      | ""           | Erro: Campo obrigatório |
 
-5. Endereço (Rua)
+5. Endereço
+
+5.1. Endereço (Rua)
+
 | ID   | Entrada              | Resultado Esperado      |
 | ---- | -------------------- | ----------------------- |
 | CT19 | "Av. Brasil, S/N"    | Aceito                  |
 | CT20 | ""                   | Erro: Campo obrigatório |
 
-5. Endereço (Cidade)
+5.2. Endereço (Cidade)
+
 | ID    | Entrada     | Resultado Esperado      |
 | ----- | ----------- | ----------------------- |
 | CT21 | "São Paulo" | Aceito                |
 | CT22 | "São 123"   | Erro: Cidade inválida |
+
+5.3. Endereço (Estado)
 
 | ID    | Entrada          | Resultado Esperado        |
 | ----- | -----------      | ------------------------- |
@@ -58,9 +70,8 @@
 | CT25 | "Santa XX"       | Erro: Estado inválido     |
 | CT26 | ""               | Erro: Campo obrigatório   |
 
+5.4. Endereço (CEP)
 
-
-5. Endereço (CEP)
 | ID   | Entrada                | Resultado Esperado             |
 | ---- | ---------------------  | --------------------------     |
 | CT27 | "89165-063"            | Aceito                         |
